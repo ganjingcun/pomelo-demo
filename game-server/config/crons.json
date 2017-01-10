@@ -6,7 +6,7 @@
     },
     "production":{
         "match":[
-             {"id":1, "time": "* * * * * *", "action": "matchCron.match"}
+             {"id":1, "time": "0/10 * * * * *", "action": "matchCron.match"}
         ]
   }
 }
