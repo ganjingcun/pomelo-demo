@@ -1,0 +1,18 @@
+{
+  "development":{
+    "connector": [
+    {"id": "connector-server-1", "host": "127.0.0.1", "port": 3150, "clientHost": "127.0.0.1", "clientPort": 3010, "frontend": true}
+    ],
+     "match": [
+    {"id": "match-server-1", "host": "127.0.0.1", "port": 4000}
+    ],
+    "fight": [
+    {"id": "fight-server-1", "host": "127.0.0.1", "port": 5000}
+    ]
+  },
+  "production":{
+    "connector": [
+    {"id": "connector-server-1", "host": "127.0.0.1", "port": 3150, "clientHost": "127.0.0.1", "clientPort": 3010, "frontend": true}
+    ]
+  }
+}
