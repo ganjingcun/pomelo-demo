@@ -19,8 +19,6 @@ cron.match = function () {
 
     var matchResult = users.splice(0, 2)
 
-    this.app.set('users', users)
-
     var playA = matchResult[0]
     var playB = matchResult[1]
 
@@ -49,6 +47,9 @@ cron.match = function () {
       ]);
       channel.leave(playA.uid, playA.sid);
       channel.leave(playB.uid, playB.sid);
+
+      self.app.set('users', users)
+
 
     });
 
